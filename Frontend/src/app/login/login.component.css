@@ -1,15 +1,16 @@
-/* styles.css */
 
 form {
-  display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Optional: Full height of the viewport */
-  
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-.field {
-  margin-bottom: 15px;
+div {
+  margin-bottom: 10px;
 }
 
 label {
@@ -17,10 +18,24 @@ label {
   margin-bottom: 5px;
 }
 
-.w-full {
+input {
   width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
 }
 
-.mt-2 {
-  margin-top: 10px;
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
+
+.error-message {
+  color: red;
+  font-size: 12px; 
+}
+

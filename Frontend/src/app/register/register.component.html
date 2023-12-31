@@ -1,1 +1,51 @@
-<p>register works!</p>
+
+
+<form [formGroup]="registerForm">
+  <div>
+    <label for="fullName">Full Name:</label>
+    <input type="text" id="fullName" name="fullName" formControlName="fullName">
+     <small class="error-message" *ngIf="fullName.invalid && (fullName.dirty || fullName.touched)">
+      <div *ngIf="fullName.errors?.['required']">fullName is required</div>
+    </small>
+  </div>
+
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" formControlName="email">
+    <small class="error-message" *ngIf="email.invalid && (email.dirty || email.touched)">
+      <div *ngIf="email.errors?.['required']">Email is required</div>
+
+    </small>
+  </div>
+
+  <div>
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" formControlName="phone">
+     <small class="error-message" *ngIf="phone.invalid && (phone.dirty || phone.touched)">
+      <div *ngIf="phone.errors?.['required']">Phone Number is required</div>
+    </small>
+  </div>
+
+  <div>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" formControlName="password">
+    <small class="error-message" *ngIf="password.invalid && (password.dirty || password.touched)">
+      <div *ngIf="password.errors?.['required']">password is required</div>
+    </small>
+  </div>
+
+  <div>
+    <label for="confirmPassword">Confirm Password:</label>
+    <input type="password" id="confirmPassword" name="confirmPassword" formControlName="confirmPassword">
+    <small class="error-message" *ngIf="confirmPassword.invalid && (confirmPassword.dirty || confirmPassword.touched)">
+      <div *ngIf="confirmPassword.errors?.['required']">password is required</div>
+    </small>
+    <small class="error-message" *ngIf="registerForm.errors?.['passwordMismatch'] && confirmPassword.valid && password.valid">Password should match</small>
+  </div>
+
+
+
+  <button [disabled]="registerForm.invalid">Register</button>
+
+  <p>Already have an account? <a routerLink="/login">Login</a></p>
+</form>
