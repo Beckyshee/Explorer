@@ -1,1 +1,35 @@
-<p>tours works!</p>
+<div class="container">
+  <h2>Create New Tour</h2>
+  <form>
+    <label for="tourName">Tour Name:</label>
+    <input type="text" id="tourName" required>
+
+    <label for="tourDescription">Tour Description:</label>
+    <textarea id="tourDescription" required></textarea>
+
+    <label for="tourDestination">Destination:</label>
+    <input type="text" id="tourDestination" required>
+
+    <label for="tourDuration">Duration (days):</label>
+    <input type="number" id="tourDuration" required>
+
+    <label for="tourPrice">Price ($):</label>
+    <input type="number" id="tourPrice" required>
+
+    <label for="tourType">Tour Type:</label>
+    <select id="tourType" required>
+      <option value="Adventure">Adventure</option>
+      <option value="Cultural">Cultural</option>
+      <option value="Relaxation">Relaxation</option>
+       <option value="Cultural">Beachventure</option>
+      <option value="Relaxation">City tour</option>
+    </select>
+
+    <label for="tourImages">Tour Images:</label>
+      <input type="url" id="tourImages" placeholder="Enter image URL" required>
+
+
+    <button type="submit">Create Tour</button>
+  </form>
+</div>
+

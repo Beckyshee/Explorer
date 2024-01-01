@@ -1,6 +1,7 @@
 <div class="app">
   <header>
-    <h1>Tour Dashboard</h1>
+    <h1 class="heading">Tour Dashboard</h1>
+    <button class="logout-button" (click)="logout()">Logout</button>
   </header>
   <main>
     <div class="section-button" [routerLink]="'/tours'">
@@ -12,12 +13,48 @@
       <p>View and manage user bookings.</p>
     </div>
     <div class="section-button" [routerLink]="'/bookings'">
+      <h2>Manage Users</h2>
+      <p>Users</p>
+    </div>
+    <div class="section-button" [routerLink]="'/bookings'">
       <h2>Profile</h2>
       <p>Profile.</p>
+    </div>
+
+    <!-- Display Tours Table -->
+    <div class="tours-table">
+      <h2>Tours List</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Tour Name</th>
+            <th>Description</th>
+            <th>Destination</th>
+            <th>Duration (days)</th>
+            <th>Price ($)</th>
+            <th>Tour Type</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Tour rows will be dynamically added here -->
+          <tr>
+            <td>Sample Tour 1</td>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td>Paris</td>
+            <td>7</td>
+            <td>1000</td>
+            <td>Adventure</td>
+            <td>
+              <button>Edit</button>
+              <button >Delete</button>
+            </td>
+          </tr>
+          <!-- Repeat the above row structure for each tour -->
+        </tbody>
+      </table>
     </div>
     <!-- Add more section buttons for other components if needed -->
     <router-outlet></router-outlet>
   </main>
 </div>
-
-

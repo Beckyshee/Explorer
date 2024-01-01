@@ -1,7 +1,5 @@
-
 .app {
   font-family: 'Arial', sans-serif;
-
 }
 
 header {
@@ -9,6 +7,9 @@ header {
   color: #fff;
   padding: 10px;
   text-align: center;
+  display: flex;
+  justify-content: space-between; /* Updated to space-between */
+  align-items: center;
 }
 
 main {
@@ -41,4 +42,56 @@ main {
 
 .section-button p {
   color: #666;
+}
+
+.logout-button {
+  background-color: #ff5050;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  margin-right: 10px; /* Adjusted to margin-right */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #cc0000;
+}
+
+.tours-table {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.tours-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tours-table th, .tours-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.tours-table th {
+  background-color: #f2f2f2;
+}
+
+.tours-table td {
+  background-color: #fff;
+}
+
+.tours-table button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.tours-table button:hover {
+  background-color: #45a049;
 }

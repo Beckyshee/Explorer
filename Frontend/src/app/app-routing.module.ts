@@ -7,6 +7,8 @@ import { RegisterComponent } from './register/register.component';
 import { BookingsComponent } from './bookings/bookings.component';
 import { ToursComponent } from './tours/tours.component';
 import { AdminComponent } from './admin/admin.component';
+import { UsersComponent } from './users/users.component';
+import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
@@ -16,6 +18,9 @@ const routes: Routes = [
   { path: 'admin', component: AdminComponent },
   { path: 'tours', component: ToursComponent },
   { path: 'bookings', component: BookingsComponent },
+  { path: 'users', component: UsersComponent },
+  { path: 'profile', component: ProfileComponent },
+  // { path: 'reviews', component: BookingsComponent },
 ];
 
 @NgModule({
