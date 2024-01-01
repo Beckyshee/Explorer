@@ -11,6 +11,8 @@ import { AdminComponent } from './admin/admin.component';
 import { FooterComponent } from './footer/footer.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BookingsComponent } from './bookings/bookings.component';
+import { ToursComponent } from './tours/tours.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     LandingComponent,
     AdminComponent,
     FooterComponent,
+    BookingsComponent,
+    ToursComponent,
   ],
   imports: [
     BrowserModule,

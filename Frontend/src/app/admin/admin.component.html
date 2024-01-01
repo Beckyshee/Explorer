@@ -1,1 +1,23 @@
-<p>admin works!</p>
+<div class="app">
+  <header>
+    <h1>Tour Dashboard</h1>
+  </header>
+  <main>
+    <div class="section-button" [routerLink]="'/tours'">
+      <h2>Tours</h2>
+      <p>Manage tours and add new ones.</p>
+    </div>
+    <div class="section-button" [routerLink]="'/bookings'">
+      <h2>Bookings</h2>
+      <p>View and manage user bookings.</p>
+    </div>
+    <div class="section-button" [routerLink]="'/bookings'">
+      <h2>Profile</h2>
+      <p>Profile.</p>
+    </div>
+    <!-- Add more section buttons for other components if needed -->
+    <router-outlet></router-outlet>
+  </main>
+</div>
+
+

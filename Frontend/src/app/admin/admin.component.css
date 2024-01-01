@@ -1,0 +1,44 @@
+
+.app {
+  font-family: 'Arial', sans-serif;
+
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.section-button {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.section-button:hover {
+  background-color: #f0f0f0;
+}
+
+.section-button h2 {
+  color: #333;
+}
+
+.section-button p {
+  color: #666;
+}
