@@ -1,0 +1,24 @@
+### Register User
+post http://localhost:5400/user/register
+Content-Type: application/json
+
+{
+    "fullName":"Rebecca kariuki",
+    "email":"rebecca@gmail.com",
+    "phone":"07123456789",
+    "password":"12345678"
+    
+    
+}
+
+
+###
+#login user
+POST http://localhost:5400/user/login
+Content-Type: application/json
+
+{
+    "email":"rebecca@gmail.com",
+    "password":"12345678"
+
+}
