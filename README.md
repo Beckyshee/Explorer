@@ -41,5 +41,5 @@
 
 ## Authors :pen:
 
-- _Becky Wanjiru_ &mdash; [@Beckyshee](https://github.com/beckyshee)
+- _Becky Kariuki_ &mdash; [@Beckyshee](https://github.com/beckyshee)
 - _Blain Muema_ &mdash; [@octocatblain](https://github.com/octocatblain)
