@@ -63,3 +63,23 @@
   font-weight: 500;
   padding-bottom: 20px;
 }
+
+@media screen and (max-width: 768px) {
+  .footer .container {
+    margin: auto 20px;
+  }
+  .footer .container .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .container .row .col {
+    width: 100%;
+    /* margin-bottom: 10px; */
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  /* .footer .container .row .col:nth-child(2),
+  .footer .container .row .col:nth-child(2) {
+    padding-left: 50p;
+  } */
+}
