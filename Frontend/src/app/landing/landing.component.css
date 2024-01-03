@@ -23,7 +23,7 @@
 
 .hero-content h1 {
   font-style: italic;
-  font-size: 56px;
+  font-size: 4rem;
   margin-bottom: 20px;
 }
 
@@ -84,3 +84,15 @@ h3 {
   margin-top: 10px;
   font-size: 1.2em;
 }
+
+@media screen and (max-width: 600px) {
+  .suggestions .images {
+    flex: 0 0 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Path: Frontend/src/app/landing/landing.component.html */
