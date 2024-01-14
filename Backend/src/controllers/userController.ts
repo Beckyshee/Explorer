@@ -84,9 +84,7 @@ class TourController {
     }
   }
 
-  // Add methods for update and delete tours using the input and execute methods
-
-  // ...
+ 
 }
 
 export default new TourController();
